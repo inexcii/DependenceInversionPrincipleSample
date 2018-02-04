@@ -7,23 +7,19 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "Button.h"
+#import "Switch.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Button *button = [Button new];
+    [button poll];
+    
+    Switch *aSwitch = [Switch new];
+    [aSwitch change];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

@@ -14,6 +14,10 @@
 		CAE0FEE3202738DF006C338C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE0FEE1202738DF006C338C /* LaunchScreen.storyboard */; };
 		CAE0FEE6202738DF006C338C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0FEE5202738DF006C338C /* main.m */; };
 		CAE0FEF0202738DF006C338C /* DependeceInversionPrinciple0204Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0FEEF202738DF006C338C /* DependeceInversionPrinciple0204Tests.m */; };
+		CAE0FEFC202739D3006C338C /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0FEFB202739D3006C338C /* Button.m */; };
+		CAE0FEFF202739E1006C338C /* Lamp.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0FEFE202739E1006C338C /* Lamp.m */; };
+		CAE0FF05202745B3006C338C /* Motor.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0FF04202745B3006C338C /* Motor.m */; };
+		CAE0FF08202746D2006C338C /* Switch.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0FF07202746D2006C338C /* Switch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		CAE0FEEB202738DF006C338C /* DependeceInversionPrinciple0204Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependeceInversionPrinciple0204Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE0FEEF202738DF006C338C /* DependeceInversionPrinciple0204Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DependeceInversionPrinciple0204Tests.m; sourceTree = "<group>"; };
 		CAE0FEF1202738DF006C338C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE0FEFA202739D3006C338C /* Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		CAE0FEFB202739D3006C338C /* Button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		CAE0FEFD202739E1006C338C /* Lamp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lamp.h; sourceTree = "<group>"; };
+		CAE0FEFE202739E1006C338C /* Lamp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lamp.m; sourceTree = "<group>"; };
+		CAE0FF0020273BCD006C338C /* SwitchableDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchableDevice.h; sourceTree = "<group>"; };
+		CAE0FF0120273E5A006C338C /* Motor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Motor.h; sourceTree = "<group>"; };
+		CAE0FF04202745B3006C338C /* Motor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Motor.m; sourceTree = "<group>"; };
+		CAE0FF06202746D2006C338C /* Switch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Switch.h; sourceTree = "<group>"; };
+		CAE0FF07202746D2006C338C /* Switch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Switch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +98,15 @@
 				CAE0FED7202738DF006C338C /* AppDelegate.m */,
 				CAE0FED9202738DF006C338C /* ViewController.h */,
 				CAE0FEDA202738DF006C338C /* ViewController.m */,
+				CAE0FF0920274E55006C338C /* Services */,
+				CAE0FEFA202739D3006C338C /* Button.h */,
+				CAE0FEFB202739D3006C338C /* Button.m */,
+				CAE0FF06202746D2006C338C /* Switch.h */,
+				CAE0FF07202746D2006C338C /* Switch.m */,
+				CAE0FEFD202739E1006C338C /* Lamp.h */,
+				CAE0FEFE202739E1006C338C /* Lamp.m */,
+				CAE0FF0120273E5A006C338C /* Motor.h */,
+				CAE0FF04202745B3006C338C /* Motor.m */,
 				CAE0FEDC202738DF006C338C /* Main.storyboard */,
 				CAE0FEDF202738DF006C338C /* Assets.xcassets */,
 				CAE0FEE1202738DF006C338C /* LaunchScreen.storyboard */,
@@ -101,6 +123,14 @@
 				CAE0FEF1202738DF006C338C /* Info.plist */,
 			);
 			path = DependeceInversionPrinciple0204Tests;
+			sourceTree = "<group>";
+		};
+		CAE0FF0920274E55006C338C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CAE0FF0020273BCD006C338C /* SwitchableDevice.h */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +235,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE0FF08202746D2006C338C /* Switch.m in Sources */,
+				CAE0FEFF202739E1006C338C /* Lamp.m in Sources */,
 				CAE0FEDB202738DF006C338C /* ViewController.m in Sources */,
 				CAE0FEE6202738DF006C338C /* main.m in Sources */,
 				CAE0FED8202738DF006C338C /* AppDelegate.m in Sources */,
+				CAE0FEFC202739D3006C338C /* Button.m in Sources */,
+				CAE0FF05202745B3006C338C /* Motor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
